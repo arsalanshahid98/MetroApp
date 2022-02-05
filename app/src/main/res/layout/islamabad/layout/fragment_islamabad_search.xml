@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Islamabad.IslamabadSearch"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select the starting and ending station"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
+            android:textSize="14dp"
+            android:layout_gravity="start"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:hint="From Where ?"
+            android:background="@drawable/edittext_style"
+            android:focusable="false"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="To"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:hint="To Where ?"
+            android:background="@drawable/edittext_style"
+            android:focusable="false"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            android:text="Let's Go"
+            android:textAllCaps="false"
+            app:cornerRadius="10dp"
+            app:backgroundTint="#17C342"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="326dp"
+                    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+                    android:background="@drawable/sheetshape"
+                    android:backgroundTint="#EEF0F3"
+                    android:padding="2px"
+                    >
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="60dp"
+                        >
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tResult"
+                                android:layout_width="0px"
+                                android:layout_height="0px"
+                                android:background="#00FFFFFF"
+                                android:textColor="#00FFFFFF" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/appCompatImageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/up_arrow"
+                                />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_saddar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Station Saddar"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_marrir_chowk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Marrir Chowk"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_liaqat_bagh"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Liaqat Bagh"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_committee_chowk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Station Saddar"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_waris_khan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Waris Khan"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_chandni_chowk"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Chandni Chowk"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_rahmanabad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rahmanabad"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_sixth_road"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="6th Road"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_shamsabad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shamsabad"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_faizabad"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Faizabad"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_ij_principle_road"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="IJ Principle Road"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_potohar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Potohar"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_khayabane_johar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Khayaban-e-Johar"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_fiaz_ahmad_fiaz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fiaz Ahmad Fiaz"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_peshawar_marr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Peshawar Marr"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_chaman"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Chaman"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_ibne_sina"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ibn-e-Sina"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_katchery"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Katchery"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_pims"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="PIMS"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_stock_exchange"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stock Exchange"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_seventh_avenue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="7th Avenue"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_shaheede_millat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shaheed-e-Millat"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_parade_ground"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Parade Ground"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/station_pak_secretariat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pak Secretariat"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:textColor="#858585"
+                                android:backgroundTint="#FFFFFF"
+                                android:padding="12dp"
+                                />
+                    </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+                </FrameLayout>
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fromDestination"
+        android:title="From"
+        />
+    <item
+        android:id="@+id/toDestination"
+        android:title="To"
+        />
+    <item
+        android:id="@+id/station"
+        android:title="Details"
+        />
+</menu>

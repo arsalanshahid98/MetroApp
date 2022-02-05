@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonActivities.About">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/layout_shape"
+                    android:elevation="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/ic_baseline_android_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:text="Metro App"
+                        android:textColor="#404040"
+                        android:textStyle="bold"
+                        android:textSize="12pt"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#DDDDDD"
+                        app:layout_constraintTop_toBottomOf="@+id/heading"
+                        tools:layout_editor_absoluteX="20dp" />
+
+                    <TextView
+                        android:id="@+id/details1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Version"
+                        android:textStyle="bold"
+                        android:textSize="10pt"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/details2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beta testing"
+                        android:textSize="6pt"
+                        app:layout_constraintTop_toBottomOf="@+id/details1"
+                        android:layout_marginTop="0dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/details3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Features"
+                        android:textStyle="bold"
+                        android:textSize="10pt"
+                        app:layout_constraintTop_toBottomOf="@+id/details2"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/details4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about"
+                        android:textSize="6pt"
+                        app:layout_constraintTop_toBottomOf="@+id/details3"
+                        android:layout_marginTop="0dp"
+                        />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonActivities.Settings"
+    android:id="@+id/settingsFragment"
+    android:background="#EEF3F3"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/selectLocation"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="80px"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawableRight="@drawable/next_icon"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="60px"
+            android:text="Location"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="0px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/selectLanguage"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/language_icon"
+            android:drawableRight="@drawable/next_icon"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="60px"
+            android:text="Language"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="0px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectLocation" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/about"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_baseline_android_24"
+            android:drawableRight="@drawable/next_icon"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="60px"
+            android:text="About"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:cornerRadius="0px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectLanguage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

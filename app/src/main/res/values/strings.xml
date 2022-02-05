@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MetroApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about">
+        1 - Get destination time\n
+        2 - Get station properties
+    </string>
+
+    <string name="destination_time_note">
+        NOTE: These times are NOT the exact times,
+        they are only approximate, since sometimes
+        the metrobus itself might have complications.
+    </string>
+</resources>

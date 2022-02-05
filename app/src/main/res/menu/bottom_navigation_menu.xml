@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"/>
+    <item
+        android:id="@+id/map"
+        android:enabled="true"
+        android:icon="@drawable/map_1"
+        android:title="Map"/>
+    <item
+        android:id="@+id/nearby"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_near_me_24"
+        android:title="Nearby"/>
+    <item
+        android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"/>
+</menu>

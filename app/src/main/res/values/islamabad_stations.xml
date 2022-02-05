@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Saddar Station-->
+    <string name="saddar_name">Saddar</string>
+    <string name="saddar_properties">
+        Station hours: 6AM - 11PM\n
+        (06:00 - 23:00)
+    </string>
+    <string name="saddar_address">
+        Murree Rd, Saddar, Rawalpindi, Punjab 46000, Pakistan
+    </string>
+
+</resources>

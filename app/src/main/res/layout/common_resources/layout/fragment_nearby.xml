@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonActivities.Nearby"
+    android:background="#EEF3F3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello there"
+                    android:layout_margin="40px"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="326dp"
+                            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+                            android:background="@drawable/sheetshape"
+                            android:padding="2px"
+                            >
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:id="@+id/appCompatImageView3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/up_arrow"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent" />
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/textInputLayout"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="60px"
+                                            android:layout_marginRight="60px"
+                                            android:layout_marginTop="20px"
+                                            android:background="@drawable/edittext_style"
+                                            android:hint="Search"
+                                            android:padding="18dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/appCompatImageView3" />
+
+                                        <com.google.android.material.button.MaterialButton
+                                            android:id="@+id/materialButton3"
+                                            android:layout_margin="60px"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+                                        <com.google.android.material.button.MaterialButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_margin="60px"
+                                            android:layout_height="wrap_content"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/materialButton3" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </FrameLayout>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

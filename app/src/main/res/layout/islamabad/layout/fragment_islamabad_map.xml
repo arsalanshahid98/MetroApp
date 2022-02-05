@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/islamabad_map"
+    tools:context=".Islamabad.IslamabadMap"
+    android:background="#FFFFFF"
+    >
+
+    <com.xuliwen.zoom.ZoomLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:max_zoom="6.0"
+        app:min_zoom="1.0"
+        app:double_click_zoom="3.0"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Metrobus"
+                android:textColor="#000000"
+                android:textSize="36px"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Islamabad"
+                android:textColor="#e94848"
+                android:textSize="60px"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/appCompatImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.495"
+                app:srcCompat="@drawable/islamabadmap_png" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_saddar"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.325"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.96" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Saddar"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_saddar"
+                app:layout_constraintStart_toEndOf="@+id/station_saddar"
+                app:layout_constraintTop_toTopOf="@+id/station_saddar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_marrir_chowk"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.92" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Marrir Chowk"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_marrir_chowk"
+                app:layout_constraintStart_toEndOf="@+id/station_marrir_chowk"
+                app:layout_constraintTop_toTopOf="@+id/station_marrir_chowk" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_liaqat_bagh"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.860" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Liaqat Bagh"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_liaqat_bagh"
+                app:layout_constraintStart_toEndOf="@+id/station_liaqat_bagh"
+                app:layout_constraintTop_toTopOf="@+id/station_liaqat_bagh" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_committee_chowk"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.795" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Committee Chowk"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_committee_chowk"
+                app:layout_constraintStart_toEndOf="@+id/station_committee_chowk"
+                app:layout_constraintTop_toTopOf="@+id/station_committee_chowk" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_waris_khan"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.364"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.726" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Waris Khan"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_waris_khan"
+                app:layout_constraintStart_toEndOf="@+id/station_waris_khan"
+                app:layout_constraintTop_toTopOf="@+id/station_waris_khan" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_chandni_chowk"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.682" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Chandni Chowk"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_chandni_chowk"
+                app:layout_constraintStart_toEndOf="@+id/station_chandni_chowk"
+                app:layout_constraintTop_toTopOf="@+id/station_chandni_chowk" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_sixth_road"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.598" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="6th Road"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_sixth_road"
+                app:layout_constraintStart_toEndOf="@+id/station_sixth_road"
+                app:layout_constraintTop_toTopOf="@+id/station_sixth_road" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_shamsabad"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.557" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Shamshabad"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_shamsabad"
+                app:layout_constraintStart_toEndOf="@+id/station_shamsabad"
+                app:layout_constraintTop_toTopOf="@+id/station_shamsabad" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_faizabad"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.572"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.516" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Faizabad"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_faizabad"
+                app:layout_constraintStart_toEndOf="@+id/station_faizabad"
+                app:layout_constraintTop_toTopOf="@+id/station_faizabad" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_ij_principle_road"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.622"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.466" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="IJ Principle Road"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_ij_principle_road"
+                app:layout_constraintStart_toEndOf="@+id/station_ij_principle_road"
+                app:layout_constraintTop_toTopOf="@+id/station_ij_principle_road" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_potohar"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.500" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potohar"
+                android:textSize="4pt"
+                app:layout_constraintEnd_toStartOf="@+id/station_potohar"
+                app:layout_constraintTop_toBottomOf="@+id/station_potohar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_peshawar_marr"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.356"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.378" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Peshawar Marr"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_peshawar_marr"
+                app:layout_constraintStart_toEndOf="@+id/station_peshawar_marr"
+                app:layout_constraintTop_toTopOf="@+id/station_peshawar_marr" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_chaman"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.328"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.332" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Chaman"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_chaman"
+                app:layout_constraintStart_toEndOf="@+id/station_chaman"
+                app:layout_constraintTop_toTopOf="@+id/station_chaman" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_ibne_sina"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.296"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.274" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Ibn-e-Sina"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_ibne_sina"
+                app:layout_constraintStart_toEndOf="@+id/station_ibne_sina"
+                app:layout_constraintTop_toTopOf="@+id/station_ibne_sina" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_katchery"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.222" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Katchery"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_katchery"
+                app:layout_constraintStart_toEndOf="@+id/station_katchery"
+                app:layout_constraintTop_toTopOf="@+id/station_katchery" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_pims"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.240"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.172" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="PIMS"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_pims"
+                app:layout_constraintEnd_toStartOf="@+id/station_pims"
+                app:layout_constraintTop_toTopOf="@+id/station_pims" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_stock_exchange"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.323"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.151" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock Exchange"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toTopOf="@+id/station_stock_exchange"
+                app:layout_constraintEnd_toStartOf="@+id/station_stock_exchange" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_seventh_avenue"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.402"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.132" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7th Avenue"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toTopOf="@+id/station_seventh_avenue"
+                app:layout_constraintEnd_toEndOf="@+id/station_seventh_avenue" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_shaheede_millat"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.480"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.112" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shaheed-e-Millat"
+                android:textSize="4pt"
+                app:layout_constraintStart_toStartOf="@+id/station_shaheede_millat"
+                app:layout_constraintTop_toBottomOf="@+id/station_shaheede_millat" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_parade_ground"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.0888" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parade Ground"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toTopOf="@+id/station_parade_ground"
+                app:layout_constraintEnd_toEndOf="@+id/station_parade_ground" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_pak_secretariat"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.062" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Pak Secretariat"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_pak_secretariat"
+                app:layout_constraintStart_toEndOf="@+id/station_pak_secretariat"
+                app:layout_constraintTop_toTopOf="@+id/station_pak_secretariat" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_fiaz_ahmad_fiaz"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.388"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.432" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Fiaz Ahmad Fiaz"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_fiaz_ahmad_fiaz"
+                app:layout_constraintStart_toEndOf="@+id/station_fiaz_ahmad_fiaz"
+                app:layout_constraintTop_toTopOf="@+id/station_fiaz_ahmad_fiaz" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_khayabane_johar"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.480" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="Khayaban-e-Johar"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_khayabane_johar"
+                app:layout_constraintEnd_toStartOf="@+id/station_khayabane_johar"
+                app:layout_constraintTop_toTopOf="@+id/station_khayabane_johar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/station_rahmanabad"
+                android:layout_width="18dp"
+                android:layout_height="30dp"
+                android:backgroundTint="#00000000"
+                style="?android:attr/borderlessButtonStyle"
+                app:cornerRadius="100px"
+                app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+                app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+                app:layout_constraintVertical_bias="0.643" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Rahmanabad"
+                android:textSize="4pt"
+                app:layout_constraintBottom_toBottomOf="@+id/station_rahmanabad"
+                app:layout_constraintStart_toEndOf="@+id/station_rahmanabad"
+                app:layout_constraintTop_toTopOf="@+id/station_rahmanabad" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tResult"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:background="#00FFFFFF"
+                android:textColor="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.xuliwen.zoom.ZoomLayout>
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommonActivities.SelectProvincePakistan"
+    android:background="#EFF4F4"
+    android:id="@+id/province_pakistan"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Province"
+            android:layout_margin="40px"
+            android:textSize="8pt"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_punjab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0px"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Punjab"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/next_icon"
+            android:textColor="#5E5E5E"
+            android:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0px"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Sindh"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/next_icon"
+            android:textColor="#5E5E5E"
+            android:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0px"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Baluchistan"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/next_icon"
+            android:textColor="#5E5E5E"
+            android:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cornerRadius="0px"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Khyber Pakhtunkhwa (KPK)"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:drawableRight="@drawable/next_icon"
+            android:textColor="#5E5E5E"
+            android:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
