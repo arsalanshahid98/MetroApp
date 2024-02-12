@@ -4,7 +4,7 @@ This is a demo app showcasing Arsalan guru's app development capabilities. The f
 The following is the work flow screenshots of the project: 
 
 
-![1](https://github.com/arsalanshahid98/MetroApp/assets/65215564/949452dc-1278-457a-9a40-0e584ec9e9a7)
+![1](<img src="https://github.com/arsalanshahid98/MetroApp/assets/65215564/949452dc-1278-457a-9a40-0e584ec9e9a7" width=400>)
 ![2](https://github.com/arsalanshahid98/MetroApp/assets/65215564/bd744aea-5ac4-4485-8b3e-500e4368a557)
 ![3](https://github.com/arsalanshahid98/MetroApp/assets/65215564/d1031cbd-d71b-4d25-b1f6-9ba083d19fa9)
 ![4](https://github.com/arsalanshahid98/MetroApp/assets/65215564/3b32be65-4e0f-48d0-bee3-32eb46d0ff25)
