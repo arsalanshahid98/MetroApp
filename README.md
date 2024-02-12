@@ -28,5 +28,20 @@ Map fragment:
 
 The map fragment displaying the map you can zoom in and zoom out.
 
+Destination time activity: 
 
+<img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/006d6099-f25a-4812-aa81-1429f8adeffd' height='400'>
 
+After setting up to and from stations in the map or search fragments the user will be directed to destination time activity where the user will be able view the time which will take to reach the destination and the trip fair.
+
+Station properties: 
+
+<img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/6d2cfe21-04d1-45dc-823d-3c085de9e53a' height='400'>
+
+When the user clicks the properties in the dropdown for the station, they will be directed to the station property page where they will be able to view the station’s opening and closing times and the station address which the user can copy paste it into the nearby fragments in the search bar to perform search query locate that particular station.
+
+Settings fragment: 
+
+<img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/c0d017c3-9f01-41ee-85bd-0ad574ec9ee7' height='400'>
+
+The settings fragment has location and about in its settings, in location the user will be able to set their location preferences and in about the user will be able to view the application properties.
