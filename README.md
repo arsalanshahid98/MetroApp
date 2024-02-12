@@ -14,3 +14,12 @@ Line 56 the zoom layout is implemented this layout makes use of zoom engine to i
 
 The following is the work flow screenshots of the project: 
 
+Search Fragment: 
+![image](https://github.com/arsalanshahid98/MetroApp/assets/65215564/d03183d7-4a02-475c-b132-a9812c9bc319)
+The search fragment, the user can slide the bottom, and it also automatically expands when input fields are clicked.
+
+Map fragment: 
+![image](https://github.com/arsalanshahid98/MetroApp/assets/65215564/b34adc36-b1b4-4534-8124-cb71f1a34b8a)
+
+
+
