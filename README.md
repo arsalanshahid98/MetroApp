@@ -23,6 +23,7 @@ The search fragment, the user can slide the bottom, and it also automatically ex
 Map fragment: 
 
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/b34adc36-b1b4-4534-8124-cb71f1a34b8a' height='400'>
+<br />
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/68efecd4-97a1-46fa-81d0-cd181c44380e' height='400'>
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/cc3416e4-b923-481a-a419-0863db47e9cc' height='400'>
 
