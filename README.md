@@ -11,7 +11,7 @@ Line 56: material design can be seen implemented to aid into refining the front 
 
 Line 60 country flags were implemented incase if the application has multiple countries maps in the future it will be able to represent them with flags.
 
-Line 63 the zoom layout is implemented this layout makes use of zoom engine to its full potential, with this implemented the developer will be able to initialize zoom layout and will be able to implement zoom in and out features to any views.
+Line 63 the zoom layout is implemented this layout makes use of zoom engine to its full potential, with this implemented the developer will be able to initialize zoom layout and will be able to implement zoom in and out features to any views. The following is the link to its source: https://github.com/guangmomo/ZoomLayout
 
 The following is the work flow screenshots of the project: 
 
