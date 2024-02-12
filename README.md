@@ -17,7 +17,7 @@ The following is the work flow screenshots of the project:
 Search Fragment: 
 
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/d03183d7-4a02-475c-b132-a9812c9bc319' height='400'>
-
+.
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/68efecd4-97a1-46fa-81d0-cd181c44380e' height='400'>
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/cc3416e4-b923-481a-a419-0863db47e9cc' height='400'>
 
