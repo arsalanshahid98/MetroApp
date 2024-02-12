@@ -17,12 +17,18 @@ The following is the work flow screenshots of the project:
 Search Fragment: 
 
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/d03183d7-4a02-475c-b132-a9812c9bc319' height='400'>
+<img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/68efecd4-97a1-46fa-81d0-cd181c44380e' height='200'>
+<img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/cc3416e4-b923-481a-a419-0863db47e9cc' height='200'>
+
+
 
 The search fragment, the user can slide the bottom, and it also automatically expands when input fields are clicked.
 
 Map fragment: 
 
 <img src='https://github.com/arsalanshahid98/MetroApp/assets/65215564/b34adc36-b1b4-4534-8124-cb71f1a34b8a' height='400'>
+
+The map fragment displaying the map you can zoom in and zoom out.
 
 
 
